@@ -24,4 +24,4 @@ Este repositório contém o código-fonte do meu currículo profissional, desenv
 * **Clean Design:** Foco na legibilidade das informações para recrutadores.
 
 ---
-<p align="center">Desenvolvido por <b>Marcelle Santos</b></p>
+<p align="center">Desenvolvido com ☕ e 🐍 por <b>Marcelle Santos</b></p>
