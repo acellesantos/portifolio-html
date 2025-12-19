@@ -3,7 +3,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
-> **Visualização Online:** [Clique aqui para acessar o meu currículo](COLE_O_LINK_DO_PAGES_AQUI) 🚀
+> **Visualização Online:** [Clique aqui para acessar o meu currículo](https://acellesantos.github.io/portifolio-html/) 🚀
 
 Este repositório contém o código-fonte do meu currículo profissional, desenvolvido como parte do meu portfólio de desenvolvimento web. O objetivo foi aplicar conceitos fundamentais de Front-end para criar uma página limpa, organizada e acessível.
 
