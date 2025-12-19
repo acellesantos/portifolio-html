@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae | Desenvolvedora Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #61dafb; /* Azul React */
+            --bg: #121212;
+            --text: #e0e0e0;
+            --sidebar-bg: #1a1a1a;
+            --card-bg: #252526;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            width: 1000px;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 300px 1fr; /* Duas colunas no desktop */
+            background: var(--sidebar-bg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Lado Esquerdo - Sidebar */
+        .sidebar {
+            padding: 40px 30px;
+            background-color: #0f0f0f;
+            border-right: 1px solid #333;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            background: #333;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            border: 3px solid var(--primary);
+            display: block;
+        }
+
+        .sidebar h3 { 
+            color: var(--primary); 
+            text-transform: uppercase; 
+            font-size: 0.9em;
+            letter-spacing: 1px;
+            margin-top: 30px; 
+        }
+
+        .sidebar p { font-size: 0.9rem; margin: 10px 0; color: #bbb; }
+
+        .tech-badge {
+            display: inline-block;
+            background: rgba(97, 218, 251, 0.1);
+            color: var(--primary);
+            padding: 4px 10px;
+            margin: 4px 2px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            border: 1px solid rgba(97, 218, 251, 0.3);
+        }
+
+        /* --- CONTEÚDO PRINCIPAL --- */
+        .main-content {
+            padding: 40px;
+            background-color: var(--sidebar-bg);
+        }
+
+        header h1 { margin: 0; font-size: 2.2em; font-weight: 700; }
+        header p { color: var(--primary); font-size: 1.1rem; margin-top: 5px; }
+
+        .section { margin-top: 40px; }
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-bottom: 2px solid #333;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover { transform: translateY(-5px); }
+
+        .project-card strong { display: block; font-size: 1.1rem; margin-bottom: 8px; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; color: #ccc; }
+
+        a { color: var(--primary); text-decoration: none; transition: 0.3s; }
+        a:hover { opacity: 0.7; }
+
+        /* --- RESPONSIVIDADE (MOBILE) --- */
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr; /* Transforma em uma única coluna */
+            }
+
+            .sidebar {
+                border-right: none;
+                border-bottom: 1px solid #333;
+                text-align: center;
+            }
+
+            .main-content {
+                padding: 25px;
+            }
+
+            header h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <aside class="sidebar">
+        <div class="profile-img"></div> 
+        
+        <h3>Contato</h3>
+        <p>📧 acelle.py@gmail.com</p>
+        <p>🔗 <a href="https://github.com/acellesantos/" target="_blank">GitHub</a></p>
+        <p>💼 <a href="https://www.linkedin.com/in/amarcellesantos/" target="_blank">LinkedIn</a></p>
+        <p>📍 Nova Iguaçu, RJ</p>
+
+        <h3>Stack Tecnológica</h3>
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Automação</span>
+        <span class="tech-badge">Flask</span>
+        <span class="tech-badge">HTML</span>
+        <span class="tech-badge">CSS</span>
+        <span class="tech-badge">APIs externas</span>
+        
+        <h3>Idiomas</h3>
+        <p>Português (Nativo)<br>Inglês (Técnico/Intermediário)</p>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h1>Marcelle Santos</h1>
+            <p>Desenvolvedora Python Junior</p>
+        </header>
+
+        <section class="section">
+            <div class="section-title">Sobre Mim</div>
+            <p>Desenvolvedora em transição de carreira, com interesse em backend e foco em soluções organizadas. Experiência com scripts em Python e automações.</p>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Projetos em Destaque</div>
+            <div class="project-card">
+                <strong>
+                    <a href="https://github.com/acellesantos/NotaAtualizacao" target="_blank" style="color: inherit; text-decoration: none;">
+                        Automação de Relatórios e Geração de HTML
+                    </a>
+                </strong>
+                <p>Automação para coleta, organização e consolidação de dados de cartões do Trello, com geração automática de relatório em planilha e página HTML para publicação.</p>
+                <p><small>Tecnologias: Python, Trello API, HTML</small></p>
+                <div style="margin-top: 10px;">
+                    <a href="https://github.com/acellesantos/NotaAtualizacao" target="_blank" style="font-size: 0.8rem; color: var(--primary);">[ Ver no GitHub ]</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <strong>Extração de Dados de E-commerce e Envio de Alertas</strong>
+                <p>Automação para coleta e tratamento de dados de produtos em e-commerces, com envio de alertas formatados via bot do Telegram.</p>
+                <small>Tecnologias: Python, Telegram Bot API</small>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">Experiência Prática</div>
+            <div>
+                <strong>Projetos Pessoais</strong> - <em>Desenvolvedora Python</em>
+                <p><small>2025 - Atualmente</small></p>
+                <ul>
+                    <li>Desenvolvimento de automações em Python aplicadas a demandas reais.</li>
+                    <li>Geração de relatórios e criação automática de páginas HTML para publicação.</li>
+                    <li>Integração de scripts com serviços externos, como envio de mensagens automatizadas.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
