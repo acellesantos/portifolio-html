@@ -46,13 +46,22 @@
         }
 
         .profile-img {
-            width: 120px;
-            height: 120px;
+            width: 130px;
+            height: 130px;
             background: #333;
             border-radius: 50%;
             margin: 0 auto 20px auto;
             border: 3px solid var(--primary);
-            display: block;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Faz a foto preencher o círculo sem esticar. */
         }
 
         .sidebar h3 { 
@@ -137,7 +146,9 @@
 
 <div class="cv-container">
     <aside class="sidebar">
-        <div class="profile-img"></div> 
+        <div class="profile-img">
+            <img src="foto.jpg" alt="Foto Marcelle Santos">
+        </div>
         
         <h3>Contato</h3>
         <p>📧 acelle.py@gmail.com</p>
@@ -147,11 +158,11 @@
 
         <h3>Stack Tecnológica</h3>
         <span class="tech-badge">Python</span>
-        <span class="tech-badge">Automação</span>
+        <span class="tech-badge">Automação (RPA)</span>
         <span class="tech-badge">Flask</span>
-        <span class="tech-badge">HTML</span>
-        <span class="tech-badge">CSS</span>
-        <span class="tech-badge">APIs externas</span>
+        <span class="tech-badge">Pandas</span>
+        <span class="tech-badge">HTML/CSS</span>
+        <span class="tech-badge">API REST</span>
         
         <h3>Idiomas</h3>
         <p>Português (Nativo)<br>Inglês (Técnico/Intermediário)</p>
@@ -160,28 +171,29 @@
     <main class="main-content">
         <header>
             <h1>Marcelle Santos</h1>
-            <p>Desenvolvedora Python Junior</p>
+            <p>Desenvolvedora Python Junior | Service Desk</p>
         </header>
 
         <section class="section">
             <div class="section-title">Sobre Mim</div>
-            <p>Desenvolvedora em transição de carreira, com interesse em backend e foco em soluções organizadas. Experiência com scripts em Python e automações.</p>
+            <p>Desenvolvedora em transição de carreira, unindo a visão analítica da Logística com a resolução de problemas do Suporte Técnico. Focada em criar automações em Python que otimizam processos reais e facilitam a gestão de dados.</p>
         </section>
 
         <section class="section">
             <div class="section-title">Projetos em Destaque</div>
             <div class="project-card">
                 <strong>
-                    <a href="https://github.com/acellesantos/NotaAtualizacao" target="_blank" style="color: inherit; text-decoration: none;">
-                        Automação de Relatórios e Geração de HTML
+                    <a href="https://github.com/acellesantos/trello-to-hesk-automation" target="_blank" style="color: inherit; text-decoration: none;">
+                        Automação de Relatórios (Trello ➔ HESK)
                     </a>
                 </strong>
-                <p>Automação para coleta, organização e consolidação de dados de cartões do Trello, com geração automática de relatório em planilha e página HTML para publicação.</p>
+                <p>Pipeline completo de RPA que extrai dados via API, processa com Pandas e gera relatórios automáticos em Excel e HTML.</p>
                 <p><small>Tecnologias: Python, Trello API, HTML</small></p>
                 <div style="margin-top: 10px;">
-                    <a href="https://github.com/acellesantos/NotaAtualizacao" target="_blank" style="font-size: 0.8rem; color: var(--primary);">[ Ver no GitHub ]</a>
+                    <a href="https://github.com/acellesantos/trello-to-hesk-automation" target="_blank" style="font-size: 0.8rem; color: var(--primary);">[ Ver no GitHub ]</a>
                 </div>
             </div>
+
             <div class="project-card">
                 <strong>Extração de Dados de E-commerce e Envio de Alertas</strong>
                 <p>Automação para coleta e tratamento de dados de produtos em e-commerces, com envio de alertas formatados via bot do Telegram.</p>
@@ -190,14 +202,14 @@
         </section>
 
         <section class="section">
-            <div class="section-title">Experiência Prática</div>
+            <div class="section-title">Experiência Profissional</div>
             <div>
-                <strong>Projetos Pessoais</strong> - <em>Desenvolvedora Python</em>
-                <p><small>2025 - Atualmente</small></p>
+                <strong>Apoio Técnico / Service Desk</strong> - <em>Centro Médico Fernandes Ltda</em>
+                <p><small>Período atual</small></p>
                 <ul>
-                    <li>Desenvolvimento de automações em Python aplicadas a demandas reais.</li>
-                    <li>Geração de relatórios e criação automática de páginas HTML para publicação.</li>
-                    <li>Integração de scripts com serviços externos, como envio de mensagens automatizadas.</li>
+                    <li>Resolução de incidentes e suporte consultivo ao usuário final.</li>
+                    <li>Desenvolvimento de scripts Python internos para automação de tarefas repetitivas.</li>
+                    <li>Melhoria de processos de documentação técnica.</li>
                 </ul>
             </div>
         </section>
